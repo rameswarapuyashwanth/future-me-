@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FutureMe - Digital Time Capsule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📨 FutureMe - Digital Time Capsule</h1>
+
+  <div id="formSection">
+    <input type="text" id="name" placeholder="Your Name"><br>
+    <textarea id="message" rows="5" placeholder="Write your message to future you..."></textarea><br>
+    <input type="date" id="unlockDate"><br>
+    <button onclick="lockMessage()">🔒 Lock Time Capsule</button>
+  </div>
+
+  <div id="revealSection" class="hidden">
+    <h2>💌 Message from Your Past Self</h2>
+    <div class="message-box" id="revealedMessage"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
